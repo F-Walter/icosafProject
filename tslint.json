@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 {
   "extends": "tslint:recommended",
   "rules": {
@@ -146,7 +146,7 @@
   "rulesDirectory": [
     "codelyzer"
   ]
-=======
+
 {
   "extends": "tslint:recommended",
   "rules": {
@@ -294,5 +294,4 @@
   "rulesDirectory": [
     "codelyzer"
   ]
->>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 }
