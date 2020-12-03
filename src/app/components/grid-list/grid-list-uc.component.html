@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mat-grid-list cols="2" rowHeight="2:1">
   <mat-grid-tile *ngFor="let b of buttons">
     <button class="uc-button" mat-raised-button color={{b.color}} (click)="onClickButton(b.value)">
@@ -6,3 +7,14 @@
     </button>
   </mat-grid-tile>
 </mat-grid-list>
+=======
+<h1 style="text-align: center;">Scegli l'area di lavoro</h1>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let b of buttons">
+    <button class="uc-button" mat-raised-button color={{b.color}} (click)="onClickButton(b.value)">
+      <img [src]="b.image" style="max-width:50%">
+      <h1>{{b.text}}</h1>
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a

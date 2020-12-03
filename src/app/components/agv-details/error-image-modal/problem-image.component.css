@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #modal {
     display: flex;
     flex-direction: column;
@@ -25,4 +26,33 @@ mat-carousel {
     top: 8%;
     left: 71%;
     z-index: 5;
+=======
+#modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 75vh;
+    width: 100%;
+    min-height: 75vh;
+    height: 100%;
+    background-color: #D0D3DC;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+mat-carousel {
+    height: 100%;
+    width: 100%;
+}
+
+#closeIcon {
+    position: fixed;
+    top: 8%;
+    left: 71%;
+    z-index: 5;
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 }

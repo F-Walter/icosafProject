@@ -41,7 +41,12 @@ import { StatsComponent } from './components/stats/stats.component';
 
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { NotificationComponent } from './components/notification/notification.component';
+<<<<<<< HEAD
 import { UseCaseAComponent } from './components/UC-A/use-case-a.component'; 
+=======
+import { UseCaseAComponent } from './components/UC-A/use-case-a.component';
+import { PerimetralLoginComponent } from './components/login/perimetral-login/perimetral-login.component';
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 
 @NgModule({
   declarations: [
@@ -57,6 +62,10 @@ import { UseCaseAComponent } from './components/UC-A/use-case-a.component';
     StatsComponent,
     NotificationComponent,
     UseCaseAComponent,
+<<<<<<< HEAD
+=======
+    PerimetralLoginComponent,
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
   ],
   imports: [
     BrowserModule,

@@ -43,10 +43,17 @@ export class GridListUCComponent {
     switch (useCase) {
 
       case 'A':
+<<<<<<< HEAD
         this.router.navigate(['Home','use-case','UC-A'])
         break;
       case 'C':
         this.router.navigate(['Home','use-case','UC-C'])
+=======
+        this.router.navigate(['Home','UC-A'])
+        break;
+      case 'C':
+        this.router.navigate(['Home','UC-C'])
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
         break;
       default: 
       this.router.navigate(['use-case-details'], { queryParams: { UC: useCase } })

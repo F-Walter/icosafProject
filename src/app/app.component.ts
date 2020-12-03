@@ -126,7 +126,11 @@ export class AppComponent implements OnInit {
     else {
       // seleziono logList
       if (!this.logIconSelected) {
+<<<<<<< HEAD
         this.openDialog()
+=======
+//        this.openDialog()
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
         this.logIconSelected = true
       }
       this.iconList.deselectAll()

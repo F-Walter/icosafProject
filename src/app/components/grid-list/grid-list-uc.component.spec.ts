@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GridListUCComponent } from './grid-list-uc.component';
@@ -23,3 +24,30 @@ describe('GridListUCComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+=======
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { GridListUCComponent } from './grid-list-uc.component';
+
+describe('GridListUCComponent', () => {
+  let component: GridListUCComponent;
+  let fixture: ComponentFixture<GridListUCComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ GridListUCComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(GridListUCComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a

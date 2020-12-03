@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
@@ -11,3 +12,18 @@
     ]
   }
 }
+=======
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/e2e",
+    "module": "commonjs",
+    "target": "es5",
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "node"
+    ]
+  }
+}
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a

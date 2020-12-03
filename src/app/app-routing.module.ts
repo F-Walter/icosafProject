@@ -7,18 +7,35 @@ import { LoginDialogComponent } from './components/login/login-dialog/login-dial
 import { AgvDetailsComponent } from './components/agv-details/agv-details.component';
 import { StatsComponent } from './components/stats/stats.component';
 import { UseCaseAComponent } from './components/UC-A/use-case-a.component';
+<<<<<<< HEAD
+=======
+import { PerimetralLoginComponent } from './components/login/perimetral-login/perimetral-login.component';
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 
 
 
 const routes: Routes = [
   {
     path: '',
+<<<<<<< HEAD
     redirectTo: 'chooseUseCase',
+=======
+    redirectTo: 'Login',
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
     pathMatch: 'full'
   },
 
   {
+<<<<<<< HEAD
     path: 'chooseUseCase',
+=======
+    path: 'Login',
+    component: PerimetralLoginComponent,  
+  },
+
+  {
+    path: 'Home',
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
     // canActivate: [AuthGuard],
     component: GridListUCComponent,  
   },
@@ -31,7 +48,11 @@ const routes: Routes = [
     component: UseCaseDetailsComponent,
   },
   {
+<<<<<<< HEAD
     path: 'Home/use-case/:useCase',
+=======
+    path: 'Home/:useCase',
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
     component: DashboardComponent,
     children: [
       {

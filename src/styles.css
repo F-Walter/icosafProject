@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* You can add global styles to this file, and also import other style files */
 
 html, body {
@@ -11,4 +12,19 @@ body {
 
 .zeroPaddingModal .mat-dialog-container  {
     padding: 0!important;
+=======
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.zeroPaddingModal .mat-dialog-container  {
+    padding: 0!important;
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 }

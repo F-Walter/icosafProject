@@ -122,12 +122,20 @@ export class DashboardComponent implements OnInit {
 
           console.log(workAreaAndAgvIds);
 
+<<<<<<< HEAD
           this.selectedWorkArea = this.workAreas.find(workArea => workArea.id === workAreaAndAgvIds[0])
+=======
+          this.selectedWorkArea = this.workAreas.find(workArea => workArea.name == workAreaAndAgvIds[0])//workArea.id === workAreaAndAgvIds[0] || 
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
           //this.selectWorkArea(this.workAreas.find(workArea => workArea.id === workAreaAndAgvIds[0]))
           //console.log("selected is ", this.selectedWorkArea);      
           //console.log("its AGVList is ", this.selectedWorkArea.agvList);
 
+<<<<<<< HEAD
           this.openAgvDetails(this.selectedWorkArea, this.selectedWorkArea.agvList.find(agv => agv.id === workAreaAndAgvIds[1]))
+=======
+          this.openAgvDetails(this.selectedWorkArea, this.selectedWorkArea.agvList.find(agv => agv.id === workAreaAndAgvIds[1]) )
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
         })
 
         //TODO calcolo percentuali di risoluzione task corrente
@@ -173,7 +181,11 @@ export class DashboardComponent implements OnInit {
     this.selectedWorkArea = workArea
     //console.log(this.selectedAgv);
 
+<<<<<<< HEAD
     this.router.navigate(["Home", "use-case", `${this.useCase}`, { outlets: { dashboardContent: ["work-area", workArea.id, "agv-details", agv.id] } }]);
+=======
+    this.router.navigate(["Home", `${this.useCase}`, { outlets: { dashboardContent: ["work-area", workArea.name, "agv-details", agv.id] } }]);
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 
     //event.stopPropagation();
   }
@@ -184,13 +196,21 @@ export class DashboardComponent implements OnInit {
       this.selectedWorkArea = workArea
     else {
       this.selectedWorkArea = null
+<<<<<<< HEAD
       this.router.navigate(["Home", "use-case", `${this.useCase}`])
+=======
+      this.router.navigate(["Home", `${this.useCase}`])
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
     }
   }
 
   openGraph(typeGraph: string) {
     //event.stopPropagation();
+<<<<<<< HEAD
     this.router.navigate(["Home", "use-case", `${this.useCase}`, { outlets: { dashboardContent: ["work-area", this.selectedWorkArea.id, "statistics", typeGraph] } }]);
+=======
+    this.router.navigate(["Home", `${this.useCase}`, { outlets: { dashboardContent: ["work-area", this.selectedWorkArea.name, "statistics", typeGraph] } }]);
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
   }
 
 
@@ -214,7 +234,11 @@ export function calculatePercentage(tasks: Task[], workAreas: WorkArea[]) {
         if (tasks[i].task_status_id === 2)
           stat.completed++
 
+<<<<<<< HEAD
         console.log("setting", id, stat);
+=======
+        //console.log("setting", id, stat);
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 
         agvIdsMap.set(id, stat)
       }
@@ -228,7 +252,11 @@ export function calculatePercentage(tasks: Task[], workAreas: WorkArea[]) {
         if (tasks[i].task_status_id === 2)
           stat.completed++
 
+<<<<<<< HEAD
           console.log("setting", id, stat);
+=======
+          //console.log("setting", id, stat);
+>>>>>>> 29f32125a9a7f117ffdaa7c7e7e7692d49913c3a
 
         agvIdsMap.set(id, stat)
 
